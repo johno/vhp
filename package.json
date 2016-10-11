@@ -1,0 +1,21 @@
+{
+  "name": "vhp",
+  "description": "Utility classes for vh percentages",
+  "author": "John Otander",
+  "version": "0.1.0",
+  "main": "index.css",
+  "style": "index.css",
+  "files": [
+    "index.css"
+  ],
+  "scripts": {
+    "start": "tachyons src/index.css --generate-docs --package=../../package.json > readme.md"
+  },
+  "repository": "johnotander/vhp",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "tachyons-cli": "^1.0.8"
+  }
+}
