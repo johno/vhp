@@ -1,24 +1,96 @@
-# vhp [![Build Status](https://secure.travis-ci.org/johnotander/vhp.svg?branch=master)](https://travis-ci.org/johnotander/vhp) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+# vhp 0.1.0
 
 Utility classes for vh percentages
 
+#### Stats
+
+121 | 16 | 16
+---|---|---
+bytes | selectors | declarations
+
 ## Installation
 
-```bash
-npm install --save vhp
+#### With [npm](https://npmjs.com)
+
+```
+npm install --save-dev vhp
+```
+
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
+#### With Git
+
+http:
+```
+git clone https://github.com/tachyons-css/vhp
+```
+
+ssh:
+```
+git clone git@github.com:tachyons-css/vhp.git
 ```
 
 ## Usage
 
-```javascript
-var vhp = require('vhp')
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
-vhp()  // => true
+Import the css module
+
+```css
+@import "vhp";
 ```
 
-## License
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
-MIT
+```sh
+$ npm i -g tachyons-cli
+$ tachyons path/to/css-file.css > dist/t.css
+```
+
+#### Using the css
+
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://unpkg.com/vhp@0.1.0/css/vhp.min.css" />
+```
+
+##### Locally
+The built css is located in the `css` directory. It contains an unminified and minified version.
+You can either cut and paste that css or link to it directly in your html.
+
+```html
+<link rel="stylesheet" href="path/to/module/css/vhp">
+```
+
+#### Development
+
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
+
+## The css
+
+```css
+.vhp-1 { height: 1vh; }
+.vhp-10 { height: 10vh; }
+.vhp-20 { height: 20vh; }
+.vhp-25 { height: 25vh; }
+.vhp-30 { height: 30vh; }
+.vhp-33 { height: 33vh; }
+.vhp-34 { height: 34vh; }
+.vhp-40 { height: 40vh; }
+.vhp-50 { height: 50vh; }
+.vhp-60 { height: 60vh; }
+.vhp-67 { height: 67vh; }
+.vhp-70 { height: 70vh; }
+.vhp-75 { height: 75vh; }
+.vhp-80 { height: 80vh; }
+.vhp-90 { height: 90vh; }
+.vhp-99 { height: 99vh; }
+```
 
 ## Contributing
 
@@ -28,8 +100,12 @@ MIT
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-Crafted with <3 by John Otander ([@4lpine](https://twitter.com/4lpine)).
+## Authors
 
-***
+* [mrmrs](http://mrmrs.io)
+* [johno](http://johnotander.com)
 
-> This package was initially generated with [yeoman](http://yeoman.io) and the [p generator](https://github.com/johnotander/generator-p.git).
+## License
+
+ISC
+
