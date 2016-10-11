@@ -2,11 +2,12 @@
   "name": "vhp",
   "description": "Utility classes for vh percentages",
   "author": "John Otander",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.css",
   "style": "index.css",
   "files": [
-    "index.css"
+    "index.css",
+    "css"
   ],
   "scripts": {
     "start": "tachyons index.css --generate-docs --package=../../package.json > readme.md && tachyons index.css > css/vhp.min.css --minify"
