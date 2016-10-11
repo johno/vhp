@@ -2,7 +2,7 @@
   "name": "vhp",
   "description": "Utility classes for vh percentages",
   "author": "John Otander",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "index.css",
   "style": "index.css",
   "files": [
