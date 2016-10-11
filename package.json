@@ -9,7 +9,7 @@
     "index.css"
   ],
   "scripts": {
-    "start": "tachyons index.css --generate-docs --package=../../package.json > readme.md"
+    "start": "tachyons index.css --generate-docs --package=../../package.json > readme.md && tachyons index.css > css/vhp.min.css --minify"
   },
   "repository": "johnotander/vhp",
   "keywords": [],
